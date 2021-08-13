@@ -91,7 +91,7 @@
     color: #1e375a;
     margin-top: 50px;
     margin-bottom: 0;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     /* float: left; */
     text-align: left;
 }
@@ -99,7 +99,7 @@
     font-size: 22px;
     line-height: 1.67;
     margin-top: 30px;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     margin-bottom: 30px;
     color: rgba(30,55,90,.7);
     text-align: left;
@@ -141,17 +141,27 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.documentation-button-sm{
+  letter-spacing: 1px;
+  margin-top: 20px;
+  color: #1e375a;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 .button-wrapper{
   margin-top: 20px !important;
   text-align: left;
-  margin-left: 54px;
+  /* margin-left: 54px; */
 }
 .nav-column{
    padding-top :10px;
    /* margin-left:50px  */
 }
-
+.small-nav{
+  text-align: center;
+}
 @media (min-width: 1000px) {
   .greater-1000{
     display: block;
@@ -159,7 +169,19 @@
   .lesser-1000{
     display: none
   }
-}  
+  
+} 
+
+@media (min-width:600px) {
+  .button-wrapper{
+    margin-top: 20px !important;
+    text-align: left;
+    display: block
+  }
+  .button-wrapper-small{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1410px) {
   .link-li{
@@ -195,39 +217,37 @@
 }
 }
 @media screen and (max-width: 1000px) {
-  .greater-1000{
-    display: none;
-  }
-  .lesser-1000{
-    display: block
-  }
-  
- .test-header{
-   font-size: 48px;
-   margin-bottom: 30px;
-   font-family: Kanit,sans-serif;
-   font-size: 30px;
-   font-weight: 500;
-   line-height: 1.2;
-   color: #1e375a;
-   margin-top: 50px;
-   margin-bottom: 0;
-   /* float: left; */
-   text-align: left;
+ .greater-1000{
+   display: none;
  }
- .logo-wrapper{
-   padding-right: 20px !important;
+ .lesser-1000{
+   display: block
  }
- }
-/* @media screen and  (max-width:600){ 
-.intro-text{
-  font-size: 14px;
-  line-height: 1.67;
-  margin-top: 30px;
+ 
+.test-header{
+  font-size: 48px;
   margin-bottom: 30px;
-  color: rgba(30,55,90,.7);
+  font-family: Kanit,sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1e375a;
+  margin-top: 50px;
+  margin-bottom: 0;
+  /* float: left; */
   text-align: left;
-  /* float: right; */
-/* } */
-/* 
-} */
+}
+.logo-wrapper{
+  padding-right: 20px !important;
+}
+}
+@media screen and  (max-width:600px){ 
+  .button-wrapper{
+    margin-top: 20px !important;
+    text-align: left;
+    display: none
+  }
+  .button-wrapper-small{
+    display: block;
+  }
+}

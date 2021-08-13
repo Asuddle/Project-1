@@ -15,11 +15,20 @@ function Header(props) {
                     </div>
                     <div>
                         <Row>
-                               
                             <div className='button-wrapper'>
-                                <a className='get-start-button'>Get Started</a>
-                                <a className=' get-start-button documentation-button'>Documentation</a>
+                                    <a className='get-start-button'>Get Started</a>
+                                    <a className='get-start-button documentation-button'>Documentation</a>
+                            </div>
+                            <div>
+                                <div className='button-wrapper-small'>
+                                <div style={{marginTop:'40px'}}>
+                                    <a className='get-start-button'>Get Started</a>
                                 </div>
+                                <div style={{marginTop:'40px'}}>
+                                <a className='get-start-button documentation-button-sm'>Documentation</a>
+                                </div>
+                                </div>
+                            </div>
                         </Row>
                     </div>
                 </Col>

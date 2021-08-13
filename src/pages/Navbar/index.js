@@ -55,7 +55,7 @@ function NavbarComponent({ history, margin = false }) {
                         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
                         <Collapse isOpen={!collapsed} navbar>
                             <Nav navbar>
-                                <NavItem>
+                                <NavItem className='small-nav'>
                                     {
                                         navigation.map(item => (
                                             <li className="front-link" style={{ paddingTop: '10px', paddingBottom: '10px', color: data === item.name ? "#2364d2" : '#1e375a' }} onClick={() => handleLink(item.name)} >{item.heading}</li>

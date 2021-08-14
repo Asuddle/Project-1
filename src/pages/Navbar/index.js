@@ -27,7 +27,7 @@ function NavbarComponent({ history, margin = false,style='image-dna' }) {
     const [width, height] = useWindowSize();
     const data = useSelector(dt => dt.navbar?.value)
     let nav = [{ name: 'cloud', heading: 'Cloud' }, { name: 'Enterprise', heading: 'Small Enterprise' },
-    { name: 'marketplace', heading: 'Insights' }, { name: 'documentation', heading: 'SuccessStories' }, { name: 'Blog', heading: 'Blog' }]
+    { name: 'marketplace', heading: 'Insights' }, { name: 'documentation', heading: 'Success Stories' }, { name: 'Blog', heading: 'Blog' }]
     const [navigation, setNavigation] = useState(nav)
     const dispatch = useDispatch();
     const handleLink = (text) => {

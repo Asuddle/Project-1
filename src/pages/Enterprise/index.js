@@ -5,7 +5,7 @@ import { Container } from 'reactstrap'
 function EnterpriseComponent(props) {
     return (
         <div>
-            <Navbar margin='103px'/>
+            <Navbar style='image-dna3'/>
             <Container>
             Enterprice
             </Container>

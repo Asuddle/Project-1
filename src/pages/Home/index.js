@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Header from './Heading'
 import Navbar from '../Navbar'
+import {ReactComponent as DNA} from '../../dna.svg'
 function Home(props) {
     return (
         <>

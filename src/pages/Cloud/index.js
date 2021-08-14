@@ -5,7 +5,7 @@ import { Container } from 'reactstrap'
 function CloudComponent(props) {
     return (
         <div>
-            <Navbar margin='103px'/>
+            <Navbar  style='image-dna2'/>
             <Container>
             Cloud
             </Container>

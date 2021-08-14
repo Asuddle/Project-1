@@ -131,8 +131,38 @@
 }
 .navbar-wrapper{
   /* float: left; */
+  /* background-image: url('./dna.svg'); */
   text-align: center;
   /* padding-right: 175px !important; */
+}
+
+.image-dna4{
+  background: url('./dna4.svg');
+  background-image: url('./dna4.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-dna3{
+  background: url('./dna3.svg');
+  background-image: url('./dna3.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-dna{
+  background: url('./dna.svg');
+  background-image: url('./dna.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-dna2{
+  background: url('./dna2.svg');
+  background-image: url('./dna2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .documentation-button{
   letter-spacing: 1px;

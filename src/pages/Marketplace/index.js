@@ -5,7 +5,7 @@ import { Container } from 'reactstrap'
 function MarketplaceComponent(props) {
     return (
         <div>
-            <Navbar margin='103px'/>
+            <Navbar style='image-dna4'/>
             <Container>
             Marketplace
             </Container>

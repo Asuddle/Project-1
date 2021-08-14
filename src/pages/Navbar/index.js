@@ -11,7 +11,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 import { withRouter } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { handleNav } from '../../actions';
-function NavbarComponent({ history, margin = false }) {
+function NavbarComponent({ history, margin = false,style='image-dna' }) {
     function useWindowSize() {
         const [size, setSize] = useState([0, 0]);
         useLayoutEffect(() => {
@@ -70,24 +70,24 @@ function NavbarComponent({ history, margin = false }) {
                 :
                 <Container>
                     <div className='greater-1000'>
-                        <Row className="pt-45 pb-30" style={{ width: '100%' }}>
-                            <Col xs={2} sm={2} md={{ size: 'auto' }} lg={{ size: 'auto' }} xl={2} xxl={2} className='logo-wrapper'>
+                        <Row className=""    style={{ width: '100%' }} >
+                            <Col xs={2} sm={2} md={{ size: 'auto' }} lg={{ size: 'auto' }} xl={2} xxl={2} className='logo-wrapper pt-45 pb-30   '>
                                 <img src={Logo} width="135px" style={{ float: 'right', cursor: 'pointer' }} onClick={() => {
                                     dispatch(handleNav(''))
                                     history.push('/')
                                 }} />
                             </Col>
-                            <Col xs={8} sm={8} md={{ size: 'auto' }} lg={{ size: 'auto' }} xl={8} xxl={7} className='nav-column'>
-                                <ul className='navbar-wrapper'>
+                            <Col xs={8} sm={8} md={{ size: 'auto' }}  lg={{ size: 'auto' }} xl={8} xxl={7} className={`nav-column ${style}`}>
+                                <ul className={`navbar-wrapper  pt-45 pb-30 `}  >
                                     {
                                         navigation.map(item => (
-                                            <li className="front-link link-li" style={{ color: data === item.name ? "#2364d2" : '#1e375a' }} onClick={() => handleLink(item.name)} >{item.heading}</li>
+                                            <li className="front-link link-li"  style={{ color: data === item.name ? "#2364d2" : '#1e375a' }} onClick={() => handleLink(item.name)} >{item.heading}</li>
                                         ))
                                     }
                                 </ul>
                             </Col>
-                            <Col xs={1} sm={1} md={{ size: 'auto' }} lg={{ size: 'auto' }} xl={1} xxl={2} style={{ paddingTop: "3px" }}>
-                                <Button className='button-chat'>CHAT</Button>
+                            <Col xs={1} sm={1} md={{ size: 'auto' }} lg={{ size: 'auto' }} xl={1} xxl={2} className="pt-45 pb-30">
+                                <Button className='button-chat pt-45 pb-30'>CHAT</Button>
                             </Col>
                         </Row>
                     </div>

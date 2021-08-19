@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+*{
+  /* background: #f8f9fc; */
+}
 .App {
   text-align: center;
-  background: url('./backgroundImg.svg');
+  /* background: url('./backgroundImg.svg'); */
   height: 100vh;
   width: 100%;
   z-index: 1;
-  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+  /* box-shadow: 0 30px 40px rgba(0,0,0,.1); */
 }
 
 @keyframes App-logo-spin {
@@ -64,7 +66,7 @@
     -webkit-border-radius: 5px !important;
     border-radius: 5px !important;
     -webkit-box-shadow: 0 20px 40px 0 rgb(165 179 212 / 20%) !important; 
-    box-shadow: 0 20px 40px 0 rgb(165 179 212 / 20%) !important;
+    /* box-shadow: 0 20px 40px 0 rgb(165 179 212 / 20%) !important; */
     border: 1px solid white !important;
     font-family: Kanit,sans-serif !important;
     font-size: 16px !important;
@@ -82,15 +84,14 @@
     background-color: #fff !important;
 }
 .test-header{
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    /* margin-bottom: 30px; */
     font-family: Kanit,sans-serif;
     font-size: 50px;
     font-weight: 500;
     line-height: 1.2;
     color: #1e375a;
-    margin-top: 50px;
-    margin-bottom: 0;
+    /* margin-top: 30px; */
     /* margin-left: 55px; */
     /* float: left; */
     text-align: left;
@@ -135,7 +136,7 @@
   text-align: center;
   /* padding-right: 175px !important; */
 }
-
+/* 
 .image-dna4{
   background: url('./dna4.svg');
   background-image: url('./dna4.svg');
@@ -163,7 +164,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .documentation-button{
   letter-spacing: 1px;
   color: #1e375a;
@@ -230,7 +231,7 @@
  }
  
 .test-header{
-  font-size: 48px;
+  font-size: 32px;
   margin-bottom: 30px;
   font-family: Kanit,sans-serif;
   font-size: 45px;
@@ -245,6 +246,34 @@
 .logo-wrapper{
   padding-right: 20px !important;
 }
+}
+
+
+.slider-font{
+  text-align: left;
+  font-family: Kanit,sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 1.2em !important;
+  color: #1e375a;  
+}
+
+
+.slider-font3{
+  font-family: Kanit,sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.5em !important;
+  color: #1e375a;  
+}
+
+.slider-font1{
+  text-align: left;
+  font-family: Kanit,sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.5em !important;
+  color: #1e375a;  
 }
 @media screen and (max-width: 1000px) {
  .greater-1000{
@@ -281,3 +310,4 @@
     display: block;
   }
 }
+
